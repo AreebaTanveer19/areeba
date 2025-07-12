@@ -1,0 +1,114 @@
+.hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: linear-gradient(120deg, var(--color-bg) 60%, var(--color-bg-alt) 100%);
+  padding: 0;
+}
+
+.hero-bg-animation {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 4rem 2rem 3rem 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hero-content h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 1.2rem;
+  line-height: 1.15;
+}
+.hero-name {
+  color: var(--color-primary);
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.hero-intro {
+  font-size: 1.25rem;
+  color: var(--color-text-light);
+  margin-bottom: 2.2rem;
+  font-family: 'Inter', 'Poppins', Arial, sans-serif;
+}
+.hero-cta {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.hero-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding: 0.95rem 2.2rem;
+  border-radius: 2rem;
+  border: 2px solid var(--color-primary);
+  background: var(--color-primary);
+  color: var(--color-white);
+  box-shadow: 0 2px 12px 0 rgba(108, 99, 255, 0.08);
+  transition: background 0.2s, color 0.2s, border 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+  text-decoration: none;
+}
+.hero-btn-primary {
+  background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  border: none;
+}
+.hero-btn-outline {
+  background: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+.hero-btn:hover, .hero-btn:focus {
+  background: var(--color-accent2);
+  color: var(--color-white);
+  border-color: var(--color-accent2);
+  box-shadow: 0 4px 24px 0 rgba(255, 122, 89, 0.10);
+}
+
+@media (max-width: 1200px) {
+  .hero-content {
+    max-width: 95vw;
+    padding: 3rem 1rem 2rem 1rem;
+  }
+  .hero-section {
+    min-height: 80vh;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .hero-content {
+    padding: 2rem 0.5rem 1.5rem 0.5rem;
+  }
+  .hero-section {
+    min-height: 60vh;
+  }
+  .hero-bg-animation {
+    height: 60vh;
+  }
+} 

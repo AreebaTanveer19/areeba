@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+  --color-bg: #f8fafd;
+  --color-bg-alt: #e9eafc;
+  --color-primary: #6c63ff;
+  --color-accent: #00ffb4;
+  --color-accent2: #ff7a59;
+  --color-text: #22223b;
+  --color-text-light: #6c757d;
+  --color-white: #fff;
+  --color-border: #e0e0e0;
+}
+
+body {
+  font-family: 'Poppins', 'Montserrat', 'Inter', Arial, sans-serif;
+  background: var(--color-bg);
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
+  color: var(--color-primary);
+  margin: 0 0 0.5em 0;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--color-accent2);
+}
+
+section {
+  padding: 4rem 0 2rem 0;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: var(--color-bg-alt);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 4px;
+}

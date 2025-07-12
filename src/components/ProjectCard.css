@@ -1,0 +1,126 @@
+.project-card {
+  background: var(--color-white);
+  border-radius: 12px;
+  box-shadow: 0 4px 24px 0 rgba(108, 99, 255, 0.06);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+.project-card:hover {
+  box-shadow: 0 6px 32px 0 rgba(108, 99, 255, 0.12);
+  transform: translateY(-2px);
+}
+
+.project-card__image-container {
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  position: relative;
+  background-color: var(--color-bg-alt);
+  overflow: hidden;
+}
+.project-card__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.project-card:hover .project-card__image {
+  transform: scale(1.05);
+}
+.project-card__content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.project-card__title {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+.project-card__description {
+  font-size: 1rem;
+  color: var(--color-text-light);
+  margin-bottom: 1rem;
+  flex-grow: 1;
+  line-height: 1.6;
+}
+
+.project-card__stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.project-card__stack-item {
+  background: var(--color-bg-alt);
+  color: var(--color-primary);
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+.project-card__links {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-top: auto;
+}
+.project-card__links a {
+  color: var(--color-text-light);
+  transition: color 0.2s, transform 0.2s;
+}
+.project-card__links a:hover {
+  color: var(--color-accent2);
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .project-card__content {
+    padding: 1.25rem;
+  }
+  .project-card__title {
+    font-size: 1.2rem;
+  }
+  .project-card__description {
+    font-size: 0.95rem;
+  }
+  .project-card__stack-item {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.6rem;
+  }
+  .project-card__links {
+    font-size: 1.3rem;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card__content {
+    padding: 1rem;
+  }
+  .project-card__title {
+    font-size: 1.1rem;
+  }
+  .project-card__description {
+    font-size: 0.9rem;
+  }
+  .project-card__stack {
+    gap: 0.4rem;
+  }
+  .project-card__stack-item {
+    font-size: 0.75rem;
+    padding: 0.15rem 0.5rem;
+  }
+  .project-card__links {
+    font-size: 1.2rem;
+    gap: 0.8rem;
+  }
+} 

@@ -1,19 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Montserrat:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap');
 
 :root {
-  --color-bg: #f8fafd;
-  --color-bg-alt: #e9eafc;
-  --color-primary: #6c63ff;
-  --color-accent: #00ffb4;
-  --color-accent2: #ff7a59;
-  --color-text: #22223b;
-  --color-text-light: #6c757d;
-  --color-white: #fff;
-  --color-border: #e0e0e0;
+  --color-bg: #181a20;
+  --color-bg-alt: #23232b;
+  --color-primary: #5b8def;
+  --color-accent: #7f5af0;
+  --color-accent2: #2cb67d;
+  --color-text: #f5f5fa;
+  --color-text-light: #b2b2c3;
+  --color-white: #23232b;
+  --color-border: #282a36;
+  --shadow: 0 4px 24px 0 rgba(36, 37, 47, 0.15);
 }
 
 body {
-  font-family: 'Poppins', 'Montserrat', 'Inter', Arial, sans-serif;
+  font-family: 'Inter', 'Poppins', 'Segoe UI', Arial, sans-serif;
   background: var(--color-bg);
   color: var(--color-text);
   margin: 0;
@@ -23,13 +24,13 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', 'Poppins', Arial, sans-serif;
+  font-family: 'Poppins', 'Inter', Arial, sans-serif;
   color: var(--color-primary);
   margin: 0 0 0.5em 0;
 }
 
 a {
-  color: var(--color-primary);
+  color: var(--color-accent);
   text-decoration: none;
   transition: color 0.2s;
 }

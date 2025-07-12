@@ -2,8 +2,17 @@ import project1 from '../assets/project1.jpeg';
 import project2 from '../assets/project2.jpeg';
 import project3 from '../assets/project3.jpeg';
 import portfolioImg from '../assets/profile.jpeg';
+import quote from '../assets/quote.png';
 
 export const moreProjects = [
+  {
+    title: 'Quote Generator',
+    description: 'A modern quote generator web app built with Next.js, styled using shadcn/ui and DaisyUI. Users can generate random inspirational quotes with a clean, responsive interface.',
+    stack: ['Next.js', 'shadcn/ui', 'DaisyUI'],
+    image: quote,
+    github: 'https://github.com/AreebaTanveer19/Nexium_areeba_tanveer/tree/main/internship', 
+    liveDemo: 'https://nexium-areeba-tanveer-bjtf.vercel.app/', 
+  },
   {
     title: 'Portfolio Website',
     description: 'A modern, responsive portfolio website built with React.js, Framer Motion, and EmailJS to showcase my skills and projects.',
@@ -14,8 +23,8 @@ export const moreProjects = [
   },
   {
     title: 'E-commerce skincare Website',
-    description: 'A full-featured e-commerce platform with product listings, a shopping cart, and a secure checkout process.',
-    stack: ['React', 'JS', 'HTML', 'CSS'],
+    description: 'A MERN stack e-commerce platform featuring user authentication with JWT, product listings, shopping cart, secure checkout, and RESTful API integration. Built using React for the frontend, Express and Node.js for the backend, and MongoDB for the database.',
+    stack: ['React', 'Express', 'MongoDB', 'JWT', 'Node.js', 'HTML', 'CSS'],
     image: project1,
     github: 'https://github.com/AreebaTanveer19/skincare-website',
     liveDemo: 'https://areebatanveer19.github.io/skincare-website/',
@@ -36,5 +45,5 @@ export const moreProjects = [
     github: 'https://github.com/AreebaTanveer19/Pharmacy-Management-System',
     liveDemo: 'https://github.com/AreebaTanveer19/Pharmacy-Management-System',
   },
- 
+  
 ]; 

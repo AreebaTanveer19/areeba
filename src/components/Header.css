@@ -42,7 +42,7 @@
   transition: color 0.2s;
 }
 .header__nav a:hover {
-  color: var(--color-primary);
+  color: var(--color-accent);
 }
 .header__nav a::after {
   content: '';

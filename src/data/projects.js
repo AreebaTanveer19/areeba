@@ -5,8 +5,8 @@ import project3 from '../assets/project3.jpeg';
 export const projects = [
   {
     title: 'E-commerce skincare Website',
-    description: 'A full-featured e-commerce platform with product listings, a shopping cart, and a secure checkout process.',
-    stack: ['React', 'JS', 'HTML', 'CSS'],
+    description: 'A MERN stack e-commerce platform featuring user authentication with JWT, product listings, shopping cart, secure checkout, and RESTful API integration. Built using React for the frontend, Express and Node.js for the backend, and MongoDB for the database.',
+    stack: ['React', 'Express', 'MongoDB', 'JWT', 'Node.js', 'HTML', 'CSS'],
     image: project1,
     github: 'https://github.com/AreebaTanveer19/skincare-website',
     liveDemo: 'https://areebatanveer19.github.io/skincare-website/',

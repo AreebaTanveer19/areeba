@@ -1,26 +1,19 @@
 import project1 from '../assets/project1.jpeg';
 import project2 from '../assets/project2.jpeg';
 import project3 from '../assets/project3.jpeg';
-import portfolioImg from '../assets/profile.jpeg';
 import quote from '../assets/quote.png';
+import blogImg from '../assets/blog.png';
 
 export const moreProjects = [
   {
-    title: 'Quote Generator',
-    description: 'A modern quote generator web app built with Next.js, styled using shadcn/ui and DaisyUI. Users can generate random inspirational quotes with a clean, responsive interface.',
-    stack: ['Next.js', 'shadcn/ui', 'DaisyUI'],
-    image: quote,
-    github: 'https://github.com/AreebaTanveer19/Nexium_areeba_tanveer/tree/main/internship', 
-    liveDemo: 'https://nexium-areeba-tanveer-bjtf.vercel.app/', 
+    title: 'AI-Powered Blog Summariser',
+    description: 'A smart, full-stack tool that scrapes blogs using n8n, generates AI summaries, translates them to Urdu, and displays them in a modern Next.js web app. Summaries are stored in Supabase, and full content is archived in MongoDB. Features Tailwind CSS and Framer Motion for a beautiful UI.',
+    stack: ['n8n', 'OpenAI', 'Google Translate API', 'Supabase', 'MongoDB', 'Next.js', 'Tailwind CSS', 'Framer Motion'],
+    image: blogImg,
+    github: 'https://github.com/AreebaTanveer19/AI-blog-summarizer',
+    liveDemo: 'https://ai-blog-summarizer-ruddy.vercel.app/',
   },
-  {
-    title: 'Portfolio Website',
-    description: 'A modern, responsive portfolio website built with React.js, Framer Motion, and EmailJS to showcase my skills and projects.',
-    stack: ['React', 'Framer Motion', 'EmailJS', 'CSS'],
-    image: portfolioImg,
-    github: 'https://github.com/AreebaTanveer19/areeba',
-    liveDemo: 'https://areebatanveer19.github.io/areeba/',
-  },
+  
   {
     title: 'E-commerce skincare Website',
     description: 'A MERN stack e-commerce platform featuring user authentication with JWT, product listings, shopping cart, secure checkout, and RESTful API integration. Built using React for the frontend, Express and Node.js for the backend, and MongoDB for the database.',
@@ -45,5 +38,13 @@ export const moreProjects = [
     github: 'https://github.com/AreebaTanveer19/Pharmacy-Management-System',
     liveDemo: 'https://github.com/AreebaTanveer19/Pharmacy-Management-System',
   },
-  
+  {
+    title: 'Quote Generator',
+    description: 'A modern quote generator web app built with Next.js, styled using shadcn/ui and DaisyUI. Users can generate random inspirational quotes with a clean, responsive interface.',
+    stack: ['Next.js', 'shadcn/ui', 'DaisyUI'],
+    image: quote,
+    github: 'https://github.com/AreebaTanveer19/Nexium_areeba_tanveer/tree/main/internship', 
+    liveDemo: 'https://nexium-areeba-tanveer-bjtf.vercel.app/', 
+  },
+ 
 ]; 

@@ -1,6 +1,7 @@
 import project1 from '../assets/project1.jpeg';
 import project2 from '../assets/project2.jpeg';
 import project3 from '../assets/project3.jpeg';
+import blogImg from '../assets/blog.png';
 
 export const projects = [
   {
@@ -26,5 +27,13 @@ export const projects = [
     image: project3,
     github: 'https://github.com/AreebaTanveer19/Pharmacy-Management-System',
     liveDemo: 'https://github.com/AreebaTanveer19/Pharmacy-Management-System',
+  },
+  {
+    title: 'AI-Powered Blog Summariser',
+    description: 'A smart, full-stack tool that scrapes blogs using n8n, generates AI summaries, translates them to Urdu, and displays them in a modern Next.js web app. Summaries are stored in Supabase, and full content is archived in MongoDB. Features Tailwind CSS and Framer Motion for a beautiful UI.',
+    stack: ['n8n', 'Groq', 'Google Translate API', 'Supabase', 'MongoDB', 'Next.js', 'Tailwind CSS', 'Framer Motion'],
+    image: blogImg,
+    github: 'https://github.com/AreebaTanveer19/AI-blog-summarizer',
+    liveDemo: 'https://ai-blog-summarizer-ruddy.vercel.app/',
   },
 ]; 
